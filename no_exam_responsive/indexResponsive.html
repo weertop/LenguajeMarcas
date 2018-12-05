@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="./style/colors.css" type="text/css">
+    <link rel="stylesheet" href="./style/base.css" type="text/css">
+    <!--se añade media espeficicando el tamaño-->
+    <link rel="stylesheet" href="./style/great.css" type="text/css" media="screen and (min-width:981px)"/>
+    <link rel="stylesheet" href="./style/medium.css" type="text/css" media="screen  and (min-width:481px) and (max-width:980px)"/>
+    <link rel="stylesheet" href="./style/mini.css" type="text/css" media="screen  and (max-width:480)"/>
+    <title>Responsive</title>
+</head>
+<body>
+    <header>
+        <h1>Titulo de mi web</h1>
+        <h2>Grande</h2>
+        <h2>Mediano</h2>
+        <h2>Pequeño</h2>
+    </header>
+
+    <div id="wraper">
+        <nav id="main-nav">
+            <h2>Mi menú</h2>
+            <ul class="menu display-great display-medium">
+                <li>Uno</li>
+                <li>Dos</li>
+                <li>Tres</li>
+            </ul>
+            <select name="coches">
+                <option value="volvo">VOLVO</option>
+                <option value="mercedes">MERCEDES</option>
+                <option value="renault">RENAULT</option>
+                <option value="seat">SEAT</option>
+            </select>
+            <br>
+        </nav>
+        <section id="main-section">
+            <h2>Mi contenido</h2>
+            <p>
+                Esta web tiene un diseño adaptable y se ajustara al tamaño del dispositivo.
+                Podemos adaptar en funcion de la resulocion o densidad de píxeles.Debemos uitlizar % en el tamaño de los divs y en el tamaño del text deberiamos utilizar "em" (un valor proporcional al tamaño de una m).
+                Podemos utilizar windows resizer el plugin de google chrome para estudiar el comportamiento de la web según el tamaño del dispositivo.
+            </p>
+            <p>
+               Una de las claves son las etiquetas "meta" y entre ellas tambien la etiqueta meta... name=viewport 
+            </p>
+            <article>
+                <h3><a href="#">Enlace 1</a></h3>
+                <p class="display-great display-medium">Este parrofo se vera cuando el tamaño de la pagina sea mediano o grande</p>
+            </article>
+            <article>
+                <h3><a href="#">Enlace 2</a></h3>
+                <p class="display-great display-medium">Este parrofo se vera cuando el tamaño de la pagina sea mediano o grande</p>
+            </article>
+            <article>
+                <h3><a href="#">Enlace 2</a></h3>
+                <p class="display-great display-medium">Este parrofo se vera cuando el tamaño de la pagina sea mediano o grande</p>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p>Parrafo del pie</p>
+        <!--que se muestre solo cuando es pequeño-->
+        <select class="display-mini" name="coches">
+            <option value="volvo">VOLVO</option>
+            <option value="mercedes">MERCEDES</option>
+            <option value="renault">RENAULT</option>
+            <option value="seat">SEAT</option>
+        </select>
+    </footer>
+
+    .tipoClase>(.nuevo>h3*3)+(.prueba>h2*2)+(div.hola>p*3)+(form>input:text*3)+(p{holamunod}*3)
+
+</body>
+</html>

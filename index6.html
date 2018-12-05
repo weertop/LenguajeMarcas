@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index6</title>
+    <style type="text/css">
+        /*una forma de centrar un div con texto dentro y que no se mueva dependiendo del zoom on navegador seria con el overflow:hidden en el contenedor y en los contenidos display:inline-block, si usamos float left se ponene uno a continuacion de otro pero sin centrar y varia segun el tamaño y el dispositivo*/
+        .contenedor{
+            text-align:center;
+            background-color:pink;
+            overflow:hidden;
+        }
+        
+        .contenedor div{
+            border:3px solid black;
+            width:300px;
+            height:90px;
+            display:inline-block;
+            /*float:left;*/
+            margin:auto;
+            
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lista ordenada</h2>
+<ol type="i" start="5">
+    <li>cafe</li>
+    <li>arroz</li>
+    <li>patatas</li>
+</ol>
+<div class="contenedor">
+    <div>
+       <p>
+        Prueba de div que contiene texto(es un contenedor)
+        </p>
+    </div>
+
+    <div>
+       <p>
+        Prueba de div que contiene texto(es un contenedor) copia 2
+        </p>
+    </div>
+
+    <div>
+       <p>
+        Prueba de div que contiene texto(es un contenedor) copia 3
+        </p>
+    </div>
+
+    <div>
+       <p>
+        Prueba de div que contiene texto(es un contenedor) copia 4
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

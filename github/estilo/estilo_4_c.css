@@ -1,0 +1,68 @@
+h1{
+    color:aqua;
+}
+
+p strong{
+    color:red;
+}
+
+.destacado{
+    color:yellow;
+}
+
+h2{
+    color:blue;
+}
+
+p em{
+    color:blue;
+}
+
+p a{
+    color:red;
+}
+
+span.especial{ /*si no se pone span.especial afecta a todo lo que lleve clase especial*/
+    color:rgb(223, 35, 223);
+}
+
+div p a{
+    color:green;
+}
+
+caption{
+    color:blue;
+}
+
+th{
+    color:red;
+}
+
+th.especial{
+    color:orange;
+}
+
+td{
+    color:green;
+}
+
+td strong{
+    color:orange;
+}
+
+div{
+    color:rgb(161, 190, 29)
+}
+
+#especial{/*otra forma de entrar seria div p #especial*/
+    color:magenta;
+}
+
+th,td,tr{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table{/*importante para que se junten las lineas de las tablas*/
+    border-collapse: collapse;
+}

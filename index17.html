@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index17</title>
+</head>
+<body>
+    <h1>Formulario registro de Usuario</h1>
+    <!--Si pones GET se podra ver los datos en la barra de url, POST no envia por la barra-->
+    <form action="" method="GET">
+        
+        Nombre:<br/>
+        <input type="text" name="nombre">
+        <br/>
+        <br/>
+        Apellidos:<br/>
+        <input type="text" name="apellidos">
+        <br/>
+        <br/>
+        Password:<br/>
+        <input type="password" name="password">
+        <br/>
+        <br/>
+        <!--seleccionar un fichero-->
+        Seleccione un fichero:     
+        <input type="file" >
+        <br/>
+        <br/>
+        <!--los name de unos mismos radio buttons deben ser iguales para que los reconozca como un solo grupo, el fieldset permite agrupar contenido para luego poder trbajar mejor-->
+        <fieldset>
+           <legend>Seleccione la mas adecuada</legend>
+            <h4>Sexo:</h4>
+            Hombre:
+            <input type="radio" name="sexo" id="hombre">
+            Mujer:
+            <input type="radio" name="sexo" id="mujer" checked="true">
+            <br/>
+            <br/>
+            <h4>Estado Civil:</h4>
+            Sotero/a: <input type="radio" name="Estadocivil" id="soltero" checked="true">
+            Casado: <input type="radio" name="Estadocivil" id="casado">
+            <br/>
+            <br/>
+        </fieldset>
+        <!--checked="true" pone por defecto uno marcado al inicio, los nombres pueden ser distintos-->
+        <h4>Estudios:</h4>
+        ESO: <input type="checkbox" name="eso">
+        <br/>
+        Bachillerato: <input type="checkbox" name="bachillerato" checked="true">
+        <br/>
+        FP superior: <input type="checkbox" name="fpsuperior">
+        <br/>
+        Universidad: <input type="checkbox" name="universidad">
+        <br/>
+        Master: <input type="checkbox" name="master">
+        <br/>
+        <br/>
+        <!--select similar a un switch, el value se usa para el backend en php, selected para poner un numero por defecto que aparzca en pantalla, con multiple en select se puede seleccionar varios <select name="edad" size="8" multiple-->
+        Seleccione edad:
+        <select name="edad">
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23" selected>23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+        </select>
+        <br/>
+        <br/>
+        <textarea name="recuadro" rows="10" cols="25"> Introduce texto Aqui</textarea>
+        <br/>
+        <br/>
+        Introduce tu texto aqui:
+        <input type="text" rows="10" name="escribe" style="background-color: aqua">
+        <br/>
+        <br/>
+          <input list="browsers" name="browser">
+          selecciona:
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist> 
+        <br/>
+        <br/>
+        <!--barrita que se mueve-->
+        <input type="range" value="50">
+        <br/>
+        <br/>
+        <!--boton para borrar los datos seleccionados-->
+        <input type="reset" value="borrar">
+        <br/>
+        <br/>
+        <input type="submit" value="Aceptar" name="aceptar">
+        
+    </form>
+</body>
+</html>

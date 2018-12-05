@@ -1,0 +1,34 @@
+p{
+    background-color: yellow;
+}
+
+#alarma{
+    background-color: red;
+    color: white;
+}
+
+#alarma h3{
+    background-color: green;
+}
+
+.tipoclass{
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+p.tipoclass{
+    color: green;
+}
+
+h3.tipoclass{
+    color: red;
+
+}
+
+h2.tipoclass{
+    color: purple;
+    background-color: greenyellow;
+    font-size: 250%;
+    font-family: fantasy;
+    text-align: center;
+}

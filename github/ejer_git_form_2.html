@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    
+</head>    
+<body>
+    <form action=" " method="get" target="_blank">
+        Nombre:<br/>
+        <!-- autofocus centra como primero a escribir y required lo hace obligatorio -->
+        <input type="text" name="nombre" size="20" required autofocus> <br/>
+        Email:<br/>
+        <input type="email" name="email" size="20" required><br/>
+        URL:<br/>
+        <!-- placeholder pone un comentario para ayudar a que poner en el text y value le da un valor preestablecido -->
+        <input type="text" name="url" placeholder="Escribe la URL de tu pagina web personal" size="40"><br/>
+        Fecha:<br/>
+        <input type="date" name="fecha" min="1990-01-01" max="2500-31-12"><br/>
+        Tiempo:<br/>
+        <input type="time" name="tiempo" min="10" max="20"><br/>
+        Fecha y Hora:<br/>
+        <input type="datetime-local" name="fechahora"><br/>
+        Mes:<br/>
+        <input type="month" name="mes"><br/>
+        Semana:<br/>
+        <input type="week" name="semana"><br/>
+        Numero (entre -10 y 10):<br/>
+        <input type="number" name="numero" min="-10" max="10"><br/>
+        Telefono:<br/>
+        <input type="tel" name="telefono" pattern="[0-9]{9}" title="Solo numeros y debe tener 9"><br/>
+        Busqueda:
+        <input type="search" name="busqueda">
+        <button type="button">Buscar</button><br/>
+        Color:
+        <input type="color" name="color" value="#ffff55"><br/>
+        Lista:<br/>
+        <input list="colores" name="colors">
+        <datalist id="colores">
+            <option value="rojo"></option>
+            <option value="azul"></option>
+            <option value="verde"></option>
+            <option value="naranja"></option>
+        </datalist>
+        <br/>
+        <input type="submit">
+        
+        </form>
+</body>    
+</html>

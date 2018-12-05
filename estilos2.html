@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mipagina</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        function saludo()
+        {
+            vari = Document.getElementById("normal").value;
+            alert(vari);
+        }
+    </script>
+    <link rel="stylesheet" href="./estilos/miestilo2.css">
+</head>
+<body>
+    <h1>Esta es otra página de estilos</h1>
+    <p>Este es un parrafo normal con css</p>
+    <p id="normal" oneclick="saludo()"> No sale nada </p>
+    <p id="alarma"> Aviso esto es una alarma! </p>
+    <h3 id="alarma"> Esto es un encabezado de nivel 3 que posee un id repetido y por lo tanto no se puede cambiar exclusivamente para este</h3>
+    <p class="tipoclass"> Aviso esto es una tipoclass</p>
+    <h3 class="tipoclass"> Esto es un encabezado de nivel 3 con class tipoclass</h3>
+    <h2 class="tipoclass"> Este texto deberia aparecer con el fondo de tipoclass pero con los cambios que se haga para h2</h2>
+    <p>Un frase sacada de un libro</p>
+    <blockquote>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+</body>
+</html>

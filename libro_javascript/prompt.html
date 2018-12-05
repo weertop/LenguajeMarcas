@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prompt</title>
+</head>
+<body>
+    <h1>Hangman!</h1>
+<!--
+    <script>
+    /*Diferentes formas de mostrar mensajes en consola y pantalla*/
+
+    var name = prompt("What's your name?");
+    console.log("hello " + name);
+
+    var likesCats = confirm("Doyou like cats?");
+    if(likesCats){
+        console.log("You're a cool cat!");
+    }else{
+        console.log("Yeah, that's fine. You're still cool!");
+    }
+
+    alert("Javascript is awesome!");
+    </script>
+-->
+<!--
+    <script>
+    /*choose a random word*/
+
+    var words = ["casa","sol","hamburguesa","telefono","edificio","estrella","mono"];
+    //pensar porque se usa words[]
+    var singleWord = words[Math.floor(Math.random()*words.length)];
+
+    var answerArray = [];
+    for(var i=0;i<singleWord.length;i++){
+        answerArray[i] = "_";
+    }
+    var remainingLetters = singleWord.length;
+    var countEnd = remainingLetters;
+
+    while(remainingLetters>0){
+        alert(answerArray.join(" "));
+
+        var guess = prompt("Guess a letter, or click cancel to stop playing");
+        guess = guess.toLowerCase();
+        if(guess==null){
+            break;
+        }else if (guess.length!==1){
+            alert("Please enter a single letter");
+        }else{
+            for(var j=0;j<answerArray.length;j++){
+                if(answerArray[j] === guess)
+                    alert("This letter was used before");
+            }
+            for(var j=0;j<singleWord.length;j++){
+                if(singleWord[j] === guess){
+                   answerArray[j] = guess;
+                   remainingLetters--;
+                }
+            }
+        }
+        countEnd--;
+        if(countEnd===0){
+            alert("Sorry game is over!" + singleWord);
+            break;
+        }
+        
+    }
+    
+    alert(answerArray.join(" "));
+    alert("God job! the answer word was " + singleWord);
+
+    </script>
+-->
+
+    <script>
+        var ourFirstFunction = function(){
+            console.log("Hello world!");
+        };
+        ourFirstFunction();
+
+        var sayHelloTo = function(name){
+            console.log("Hello " + name);
+        };
+        sayHelloTo("Alex");
+    </script>
+</body>
+</html>

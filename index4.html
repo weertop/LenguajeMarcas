@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--con el border spacing se separan las celdas-->
+    <title>index4</title>
+    <style type="text/css">
+        /* table, td, th, tr{border:2px solid blue;}*/
+        
+        th,td{padding: 20px}
+        td{border:2px solid red}
+        th{border:2px solid green; text-align: left}
+        tr{border:5px solid black}
+        table{border-spacing:10px}
+    </style>
+</head>
+<body>
+<!--filas TR table row, columnas TD, widht:100% se adapta a la pantalla"body", se puede establecer un tamaño width:15px -->
+<table style="border:3px solid blue; width:100% " align="center">
+   <tr>
+      <!--encabezado th the head, por defecto pone lo que se escriba en el centro, ojo al colespan pero debe haber debajo espacio, el rowspan se coloca dentro de los tr y se debe tener en cuenta que se puede mover las celdas de debajo, si se hace un colspan y junto hay otra celda se modifica la tabla para arriba-->
+      <th style="border:0px"> </th>
+      <th>Poblacion</th>
+      <th colspan="3">m2</th>
+
+   </tr>
+   <tr>
+       <th> España</th>
+       <td> dato 1</td>
+       <td> dato 1</td>
+       <td colspan="2"> dato 1</td>
+
+   </tr>
+   <tr>
+        <th rowspan="2"> Alemania</th>
+        <td> dato 2</td>
+        <td> dato 2</td>
+        <td colspan="2"> dato 2</td>
+       
+   </tr>
+   <tr>
+        <th> Francia</th>
+        <td> dato 3</td>
+        <td> dato 3</td>
+        <td> dato 3</td>
+       
+   </tr>
+    
+</table>
+
+</body>
+</html>

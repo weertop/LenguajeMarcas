@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    font-family: arial;
+    font-family: helvetica;
+}
+
+.contenedora{
+    align-content: center;
+    background-color: aliceblue;
+    width:964px;
+    height:860px;
+    border-radius: 1em;
+    margin:auto;
+}
+
+.header{
+    
+}
+
+.menu_con_margin{
+    float:right;
+    list-style-type: none;
+    margin-top:25px;
+}
+
+.menu{
+    text-align: right;
+    list-style-type: none;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+ul li{
+    display: inline;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding:10px;
+}
+
+a:hover{
+    background-color: red;
+}
+
+.titulo{
+    text-align: center
+}
+
+.row{
+    display:inline;
+}
+
+.col{
+    width:33%;
+    height:auto;
+    float:left;
+    padding: 30px;
+    text-align: justify;
+}

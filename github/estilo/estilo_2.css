@@ -1,0 +1,76 @@
+/*ojo a los cambios hechos para los article y aside se cambia las cosaas dentro
+para los margin usamos botton, para el titulo se usa margin de h1*/
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+div#contenedor{
+    margin:auto;
+    width:960px;
+    
+}
+
+footer{
+    clear:both;
+    background-color: black;
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+
+section#contenido{
+    
+    float:left;
+}
+
+header{
+    background-color:black;
+    text-align:center;
+    color:white;  
+}
+header h1{
+    text-align: center;
+    padding:25px;
+}
+
+nav{
+    background-color:darkorange;
+    text-align:center;
+    color:white;
+    margin-bottom: 10px;
+}
+nav h2{
+    padding: 10px;
+}
+
+article{
+    background-color:blue;
+    color:white;
+    text-align: center;
+    width:790px;
+    height:400px;
+    /*float:left;*/
+    margin-bottom: 10px;
+}
+
+section#contenido h2{
+    padding: 200px;
+}
+aside h2{
+    margin-top:200px;
+}
+
+aside{
+    background-color:green;
+    color:white;
+    text-align: center;
+    width:160px;
+    height:400px;
+    float:right;
+    margin-bottom: 10px;
+}
+
+/*line-height:20px*/
