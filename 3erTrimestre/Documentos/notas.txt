@@ -1,0 +1,7 @@
+hacer una plantilla evitamos hacer un bucle for,
+los ficheros xsl solo con html no para xml,
+se puede usar 2 plantillas en un ejercicios
+xsl:text ya no se usa, se pone directamente el texto
+copy-of copia el xml de origen en formato raw, no se va a preguntar
+xsl if, test, choose, for each, when, sort  si que entra en el examen
+no el ejercicio 11 lo de transformar a xml

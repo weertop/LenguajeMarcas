@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="XSL250319otraforma.xsl" type="text/xsl"?>
+
+<notas>
+    <alumno convocatoria="Ext">
+        <nombre>Carlos</nombre>
+        <apellido>Lopez</apellido>
+        <num-matricula>j0143</num-matricula>
+        <nota-teoria>8.0</nota-teoria>
+        <nota-practica>9.0</nota-practica>
+        <nota-final>6</nota-final>
+    </alumno>
+    <alumno convocatoria="Sep">
+        <nombre>Pedro</nombre>
+        <apellido>Santo</apellido>
+        <num-matricula>h3423</num-matricula>
+        <nota-teoria>6.0</nota-teoria>
+        <nota-practica>10.0</nota-practica>
+        <nota-final>8</nota-final>
+    </alumno>
+    <alumno convocatoria="Lol">
+        <nombre>Maria</nombre>
+        <apellido>Montero</apellido>
+        <num-matricula>t654645</num-matricula>
+        <nota-teoria>4.0</nota-teoria>
+        <nota-practica>3.0</nota-practica>
+        <nota-final>4</nota-final>
+    </alumno>
+    <alumno convocatoria="Pep">
+        <nombre>Estefania</nombre>
+        <apellido>Consuel</apellido>
+        <num-matricula>f35345</num-matricula>
+        <nota-teoria>5.0</nota-teoria>
+        <nota-practica>5.0</nota-practica>
+        <nota-final>5</nota-final>
+    </alumno>
+    <alumno convocatoria="Mar">
+        <nombre>Sandra</nombre>
+        <apellido>Saint</apellido>
+        <num-matricula>c34534</num-matricula>
+        <nota-teoria>8.0</nota-teoria>
+        <nota-practica>6.0</nota-practica>
+        <nota-final>6</nota-final>
+    </alumno>
+</notas>
+

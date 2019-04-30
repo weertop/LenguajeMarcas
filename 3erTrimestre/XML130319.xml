@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="XSL130319ejercicio.xsl" type="text/xsl"?>
+
+<concesionario>
+    <coche>
+        <marca>Seat</marca>
+        <modelo>Cordoba</modelo>
+        <matricula>1111</matricula>
+    </coche>
+    <coche>
+        <marca>BMW</marca>
+        <modelo>Serie1</modelo>
+        <matricula>2222</matricula>
+    </coche>
+    <coche>
+        <marca>Audi</marca>
+        <modelo>Serie2</modelo>
+        <matricula>3333</matricula>
+    </coche>
+</concesionario>
